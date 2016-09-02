@@ -18,6 +18,8 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/lightline.vim'
 Plugin 'eshion/vim-sync'
+Plugin 'sirtaj/vim-openscad'
+
 
 filetype plugin indent on
 " ##################################################
