@@ -19,7 +19,10 @@ Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/lightline.vim'
 Plugin 'eshion/vim-sync'
 Plugin 'sirtaj/vim-openscad'
-
+Plugin 'scrooloose/syntastic'
+Plugin 'pangloss/vim-javascript'
+Plugin 'lervag/vimtex'
+"Plugin 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 " ##################################################
@@ -54,6 +57,8 @@ map <F12> :NERDTree<CR>
 nnoremap <F11> :TagbarToggle<CR>
 nnoremap <F5> "=strftime("MP %Y-%m-%d")<CR>P
 nnoremap <F2> :tabnew<CR>
+" Remap jj to ESC
+inoremap jj <ESC>
 " Python
 let g:pymode_rope_completion = 1
 "let python_highlight_all=1
@@ -79,15 +84,15 @@ inoremap "  ""<Left>
 nnoremap <C-u>  :call SyncUploadFile()<CR>
 
 " Syntastic
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 1
-"let g:syntastic_cpp_include_dirs = ['inc', 'src']
+let g:syntastic_cpp_include_dirs = ['inc', 'src']
 "let g:syntastic_cpp_compiler = '/usr/bin/g++'
 "let g:syntastic_cpp_checkers = ['/usr/bin/g++']
 
