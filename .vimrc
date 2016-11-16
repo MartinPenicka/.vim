@@ -15,6 +15,7 @@ Plugin 'gmarik/vundle'
 " ##################################################
 
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/lightline.vim'
 Plugin 'eshion/vim-sync'
