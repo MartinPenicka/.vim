@@ -96,6 +96,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_cpp_include_dirs = ['inc', 'src']
 "let g:syntastic_cpp_compiler = '/usr/bin/g++'
 "let g:syntastic_cpp_checkers = ['/usr/bin/g++']
+let g:syntastic_cpp_compiler_options = ' -std=c++0x'
 
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$']
