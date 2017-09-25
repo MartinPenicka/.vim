@@ -50,7 +50,7 @@ hi def link ErrorLongLine Error
 
 " GUI settings
 set guifont=DejaVu\ Sans\ Mono\ 11
-set lines=999 columns=999 "Fulscreen
+" set lines=999 columns=999 "Fulscreen
 set guioptions-=T
 
 " Keyboard mappings
