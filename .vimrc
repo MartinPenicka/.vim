@@ -34,6 +34,8 @@ filetype plugin indent on
 colorscheme gruvbox
 set background=dark
 
+set path=$PWD/**
+
 set number
 set ts=4
 set expandtab
@@ -42,6 +44,7 @@ set shiftwidth=4
 set cursorline
 set showmatch
 set colorcolumn=100
+set hlsearch
 au BufRead *.py,*.cc,*.c,*.C,*.h,*.inl,*.cpp syn match ErrorSpaces /\\s\\+$/ display
 au BufRead *.py,*.cc,*.c,*.C,*.h,*.inl,*.cpp syn match ErrorLongLine /^.\\{99\\}.\\+/ display
 au BufRead *.py,*.cc,*.c,*.C,*.h,*.inl,*.cpp syn cluster	cCommentGroup contains=cToDo
@@ -71,7 +74,7 @@ au CompleteDone * pclose
 set completeopt=longest,menuone
 
 " C/C++, JavaScript specific settings
-autocmd FileType c,cc,tcc,h,cpp,javascript inoremap {   <CR>{<CR><Space><CR>}<Up>
+autocmd FileType c,cc,tcc,h,cpp,javascript inoremap {   <CR>{<CR><CR>}<Up>
 autocmd FileType c,cc,tcc,h,cpp,javascript setlocal foldmethod=syntax
 
 " Brackets and symbols completion
